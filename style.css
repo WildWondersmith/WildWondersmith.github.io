@@ -136,8 +136,37 @@ footer {
     color: var(--color-light); /* Light text in accessibility mode footer */
 }
 
+/* Three-column layout */
+.three-column-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Adjust column widths as needed */
+    gap: 20px; /* Gap between columns */
+}
+
+.left-column,
+.middle-column,
+.right-column {
+    padding: 0 10px; /* Add some padding within columns */
+}
+
 
 /* Responsive design */
+@media (max-width: 992px) {
+    .three-column-layout {
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    }
+
+    .left-column,
+    .middle-column,
+    .right-column {
+        padding: 0; /* Remove column padding when stacked */
+    }
+
+    section {
+        padding: 30px 0; /* Adjust section padding */
+    }
+}
+
 @media (max-width: 768px) {
     .card-container {
         grid-template-columns: 1fr;
@@ -164,6 +193,11 @@ footer {
     h2 {
         font-size: 1.5em;
     }
+
+    h3 {
+        font-size: 1.1em;
+    }
+}
 
     h3 {
         font-size: 1.1em;
