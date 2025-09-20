@@ -1,4 +1,3 @@
-%%writefile script.js
 document.addEventListener('DOMContentLoaded', () => {
     const accessibilityToggle = document.getElementById('accessibility-toggle');
     if (accessibilityToggle) {
