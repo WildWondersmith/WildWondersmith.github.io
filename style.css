@@ -46,7 +46,7 @@ header button:hover {
 }
 
 section {
-    padding: 40px 0;
+    padding: 20px 0; /* Adjusted padding */
     margin-bottom: 20px;
     border-bottom: 1px solid var(--color-light-gray); /* Subtle separator */
 }
@@ -57,7 +57,7 @@ section:last-child {
 
 .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusted minmax */
     gap: 20px;
 }
 
@@ -65,7 +65,7 @@ section:last-child {
     background-color: var(--color-light); /* Light background for cards */
     border: 1px solid var(--color-light-gray); /* Light gray border */
     border-radius: 8px;
-    padding: 20px;
+    padding: 15px; /* Adjusted padding */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
     transition: transform 0.3s ease-in-out;
     color: var(--color-secondary); /* Dark text within cards */
@@ -79,12 +79,13 @@ section:last-child {
 h2 {
     color: var(--color-primary); /* Dark green for main headings */
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px; /* Adjusted margin */
 }
 
 h3 {
     color: var(--color-muted-green); /* Muted green for card titles */
     margin-top: 0;
+    margin-bottom: 10px; /* Added margin */
 }
 
 footer {
@@ -193,11 +194,6 @@ footer {
     h2 {
         font-size: 1.5em;
     }
-
-    h3 {
-        font-size: 1.1em;
-    }
-}
 
     h3 {
         font-size: 1.1em;
